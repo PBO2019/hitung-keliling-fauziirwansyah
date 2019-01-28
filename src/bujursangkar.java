@@ -1,14 +1,19 @@
 public class bujursangkar {
-        int sisi = 5;
-        int keliling;
+        private int sisi = 5;
+        private int keliling;
 
-    public void keliling(){
-        int keliling = 4* sisi;
-        System.out.println ("keliling bujur sangkar adalah = "+keliling);
+
+    public void kelilingbujursangkar(){
+       this.keliling = 4 * sisi;
     }
 
-    public static void main (String []args){
-        bujursangkar bujurSangkar =  new bujursangkar();
-        bujurSangkar.keliling();
+
+
+    public int getKeliling(){
+        return keliling;
+    }
+
+    public void setsisi(int sisi) {
+        this.sisi = sisi;
     }
 }

@@ -1,16 +1,21 @@
 public class Lingkaran {
-    public double pi = 3.14;
-    public int rad = 14;
-    double keliling;
+    private double pi = 3.14;
+    private int rad = 14;
+    public double keliling;
 
-    public void keliling(){
-        keliling = 2*pi *rad ;
 
-        System.out.println ("keliling lingkaran adalah " + keliling);
+    public void kelilinglingkaran(){
+        this.keliling = 2*pi*rad;
     }
 
-    public static void main (String [] args){
-        Lingkaran  lingkaran = new Lingkaran();
-        lingkaran.keliling();
+    public void setrad(int rad){
+        this.rad = rad;
     }
+
+    public double getKeliling(){
+        return keliling;
+    }
+
+
+
 }
